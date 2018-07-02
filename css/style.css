@@ -1,0 +1,76 @@
+.header, .content{
+	display: flex;
+}
+
+
+header li{
+	width: 70%;
+	display: inline;
+	padding-right: 30px;	
+
+}
+
+header ul{
+	justify-content: center;
+}
+
+header a {
+	text-decoration: none;
+}
+
+.container {
+	background: lightgreen;
+}
+
+
+
+.box1{
+	display: flex;
+	flex-direction: column;
+}
+
+.container li{
+	display: inline;
+}
+
+.masterFooter li {
+	display: inline;
+	padding-left: 30px;
+}
+
+.masterFooter{
+	display: flex;
+	justify-content: center;
+	background: yellow;
+	height: 100px;
+}
+
+.img1column img{
+	height: 228px;
+}
+
+
+@media (max-width: 600px) {
+
+  .mainContainer {
+  	display: flex;
+    flex-direction: column;
+  }
+
+  .content{
+  	flex-direction: column;
+  }
+
+  .masterFooter{
+  	flex-direction: column;
+  }
+
+  .header{
+  	flex-direction: column;
+  }
+
+  .heroContainer{
+  	flex-direction: column;
+  }
+
+ }
