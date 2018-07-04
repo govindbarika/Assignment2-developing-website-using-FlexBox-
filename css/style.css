@@ -1,20 +1,15 @@
 .mainContainer{
 	width: 100%;
+	border:0px;
 }
-
 body{
-	background: lightgray;
+	margin: 0;
 }
 
+/*Header section start */
 .header{
 	display: flex;
-}
-
-.header{
-	width: 100%;
-	height: 120px;
-	background: orange;
-	border-color: red;
+	background: lightgray;
 }
 
 header li{
@@ -31,27 +26,129 @@ nav{
 	display: flex;
 	background: gray;
 	width: 75%;
+	height: 128px;
 	justify-content: center;
 }
 
 header img{
 	width: 360px;
-	height: 120px;
+	height: 128px;
 }
 
 nav a:hover { 
     font: bold;
-    font-size: 150%;
     background-color: green;
 }
-
-
-
 
 header a {
 	width: 25%;
 	text-decoration: none;
 }
+
+/*Header section end */
+
+body{
+	background: lightgray;
+}
+
+/*Primary content Section start*/
+
+
+.primaryContentSection{
+	display: flex;
+	width: 1200px;
+	margin: auto;
+}
+
+.img1column img, .img2column img, .img3column img{
+	width: 387px;
+	height: 228px;
+}
+
+/*.img2column img{
+	width: 360px;
+	height: 228px;
+}
+
+.img3column img{
+	width: 360px;
+	height: 228px;
+}*/
+
+
+
+.section1, .section2, .section3{
+	width: 34%;
+	
+}
+ .section2, .section3{
+	margin-left: 20px;
+}
+
+/*Primary content Section end*/
+
+
+.container{
+	width: 1200px;
+	margin: auto;
+}
+
+
+
+.secondaryContentSection{
+	display: flex;
+}
+
+.section4{
+	display: flex;
+	width: 1200px;
+	height: 400px;
+	margin: auto;
+}
+
+.section4Content{
+	width: 60%;
+}
+
+.section5{
+
+	width: 40%;
+	height: 400px;
+	background: #82735C;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	margin-left: 20px;
+}
+
+.section4Content img{
+	width: 100%;
+	height: 100%;
+}
+
+.section5Content1, .section5Content2, .section5Content3{
+	height: 110px;
+	text-align: center;
+	line-height: 6em;
+}
+
+
+
+.section5 a:hover{
+	background: #82735C;
+}
+.section5Content1{	
+	background: #9DB17C;
+}
+
+.section5Content2{
+	background: #9CDE9F;
+}
+
+.section5Content3{
+	background: #D1F5BE;
+}
+
 
 .content{
 	display: flex;
@@ -63,16 +160,13 @@ header a {
 
 
 
-.box1{
-	display: flex;
-	flex-direction: column;
-}
+
 
 .container li{
 	display: inline;
 }
 
-.masterFooter li {
+.footerContent li {
 	display: inline;
 	padding-left: 30px;
 }
@@ -82,12 +176,10 @@ header a {
 	justify-content: center;
 	background: yellow;
 	height: 100px;
+	margin-top: 10px;
 }
 
-.img1column img{
-	width: 400px;
-	height: 228px;
-}
+
 
 .heroContainer{
 	display: flex;	
@@ -96,43 +188,67 @@ header a {
 }
 
 .heroContainer img{
-	width:100%;
+	width:1200px;
 	height:400px;
 }
 
-.content, .box3{
 
-	padding-right: 120px;
+
+.footerContent{
+	display: flex;
+	width: 60%;
 }
 
-.content{
-	justify-content: space-between;
+.footerContent ul{
+	line-height: 4em;
 }
 
+.footerContent a:hover{
+	background-color: green;
+}
+
+.fontawasome{
+	width: 40%;
+}
+
+.fontawasome li{
+	display: inline;
+}
+
+.fontawasome ul{
+	line-height: 4em;
+}
 
 /*Social Network symbols using fontawasome*/
 
-/*
+
 .fa:hover {
-    opacity: 0.7;
+    opacity:500;
 }
 
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+  background: #3B5998;  
 }
 
 .fa-twitter {
   background: #55ACEE;
-  color: white;
 }
 
 .fa-linkedin {
   background: #007bb5;
-  color: white;
 }
 
-*/
+.fa-facebook, .fa-twitter, .fa-linkedin{
+	color: white;
+  	width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 2em;
+}
+
+
+
+
 
 
 @media (max-width: 600px) {
@@ -140,25 +256,81 @@ header a {
   .mainContainer {
   	display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 960px;
   }
 
-  .content,.subContent, .masterFooter, .header{
+
+
+  .heroContainer, .primaryContentSection,  .container, .section4, .section5, .masterFooter, .header, .section5{
   	flex-direction: column;
   }
 
-  .content{
 
-  	width: 100%;
+
+
+  .primaryContentSection{
+
+  	width: 960px;
   }
 
+  .section4{
+  	height: 930px;
+  }
+
+  .section1, .section2, .section3{
+  	width:960px;
+  }
+ 
+
+  .container{
+  	width: 960px;
+  }
+
+  .section4Content{
+  	width: 960px;
+  	height: 500px;
+  	margin-top: 20px;
+  }
+
+  .secondaryContentSection{
+  	width: 960px;
+  	height: 1000px;
+  }
+
+.secondaryContentSection{
+	height: auto;
 }
 
-@media (max-width: 600px) {
-	.mainContainer{
-		width: 100%;
-	}
-	.heroContainer a img{
-		width: auto;
-	}
+.section1{
+	margin-top: 20px;
 }
+  
+  .section5{
+  	margin-left: 0;
+  	width: 920px;
+  	margin-bottom: 0px;
+  }
+
+  .masterFooter{
+  	width: 960px;
+  	height: 150px;
+  }
+
+.heroContainer img{
+	width: 960px;
+}
+
+.img1column img, .img2column img, .img3column img{
+	width: 960px;
+}
+
+header img{
+	width: 960px;
+	height: 128px;
+}
+nav{
+	width: 960px;
+}
+
+}
+
